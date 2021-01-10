@@ -86,19 +86,19 @@
 
 
 
-<meta name="description" content="希尔排序思想希尔排序是一种插入排序，简单插入排序的思想是每次将一个数插入有序序列中，这意味着每个待排序元素都要和有序序列进行比较，即时间复杂度度为$O(n^2)$。希尔排序通过设定一个步长$gap$，将待排序序列分组，每一次进行组内排序，通过缩小步长到1，最后执行一次简单插入排序，因此也称为缩小增量排序。">
+<meta name="description" content="思想希尔排序是一种插入排序，简单插入排序的思想是每次将一个数插入有序序列中，这意味着每个待排序元素都要和有序序列进行比较，即时间复杂度度为$O(n^2)$。希尔排序通过设定一个步长$gap$，将待排序序列分组，每一次进行组内排序，通过缩小步长到1，最后执行一次简单插入排序，因此也称为缩小增量排序。">
 <meta name="keywords" content="排序">
 <meta property="og:type" content="article">
 <meta property="og:title" content="排序—希尔排序">
 <meta property="og:url" content="http://fanjiajia.cn/2020/12/20/programming-practise/flx1/index.html">
 <meta property="og:site_name" content="小小范同学">
-<meta property="og:description" content="希尔排序思想希尔排序是一种插入排序，简单插入排序的思想是每次将一个数插入有序序列中，这意味着每个待排序元素都要和有序序列进行比较，即时间复杂度度为$O(n^2)$。希尔排序通过设定一个步长$gap$，将待排序序列分组，每一次进行组内排序，通过缩小步长到1，最后执行一次简单插入排序，因此也称为缩小增量排序。">
+<meta property="og:description" content="思想希尔排序是一种插入排序，简单插入排序的思想是每次将一个数插入有序序列中，这意味着每个待排序元素都要和有序序列进行比较，即时间复杂度度为$O(n^2)$。希尔排序通过设定一个步长$gap$，将待排序序列分组，每一次进行组内排序，通过缩小步长到1，最后执行一次简单插入排序，因此也称为缩小增量排序。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://p1-tt.byteimg.com/origin/pgc-image/15351158360912d857c522c?from=pc">
-<meta property="og:updated_time" content="2020-12-20T08:54:11.228Z">
+<meta property="og:updated_time" content="2021-01-10T15:35:19.735Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="排序—希尔排序">
-<meta name="twitter:description" content="希尔排序思想希尔排序是一种插入排序，简单插入排序的思想是每次将一个数插入有序序列中，这意味着每个待排序元素都要和有序序列进行比较，即时间复杂度度为$O(n^2)$。希尔排序通过设定一个步长$gap$，将待排序序列分组，每一次进行组内排序，通过缩小步长到1，最后执行一次简单插入排序，因此也称为缩小增量排序。">
+<meta name="twitter:description" content="思想希尔排序是一种插入排序，简单插入排序的思想是每次将一个数插入有序序列中，这意味着每个待排序元素都要和有序序列进行比较，即时间复杂度度为$O(n^2)$。希尔排序通过设定一个步长$gap$，将待排序序列分组，每一次进行组内排序，通过缩小步长到1，最后执行一次简单插入排序，因此也称为缩小增量排序。">
 <meta name="twitter:image" content="https://p1-tt.byteimg.com/origin/pgc-image/15351158360912d857c522c?from=pc">
 
 
@@ -437,7 +437,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  459 字
+                  455 字
                 </span>
               
 
@@ -453,7 +453,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2 分钟
+                  1 分钟
                 </span>
               
             </div>
@@ -474,7 +474,7 @@
       
 
       
-        <h2 id="希尔排序思想"><a href="#希尔排序思想" class="headerlink" title="希尔排序思想"></a>希尔排序思想</h2><p>希尔排序是一种插入排序，<a href="https://www.jianshu.com/p/63c20e87f88a" target="_blank" rel="noopener">简单插入排序</a>的思想是每次将一个数插入有序序列中，这意味着每个待排序元素都要和有序序列进行比较，即时间复杂度度为$O(n^2)$。希尔排序通过设定一个步长$gap$，将待排序序列分组，每一次进行组内排序，通过缩小步长到1，最后执行一次简单插入排序，因此也称为缩小增量排序。<br><a id="more"></a><br>步骤，可以查看网上一些大佬通过图解的方式讲解的排序过程，可参考资料1</p>
+        <h2 id="思想"><a href="#思想" class="headerlink" title="思想"></a>思想</h2><p>希尔排序是一种插入排序，<a href="https://www.jianshu.com/p/63c20e87f88a" target="_blank" rel="noopener">简单插入排序</a>的思想是每次将一个数插入有序序列中，这意味着每个待排序元素都要和有序序列进行比较，即时间复杂度度为$O(n^2)$。希尔排序通过设定一个步长$gap$，将待排序序列分组，每一次进行组内排序，通过缩小步长到1，最后执行一次简单插入排序，因此也称为缩小增量排序。<br><a id="more"></a><br>步骤，可以查看网上一些大佬通过图解的方式讲解的排序过程，可参考资料1</p>
 <ul>
 <li>step1 设定gap初始值为待排序序列长度的一半$gap = length / 2$，且后续$gap = gap/2$。</li>
 <li>step2 对以$gap$分组的序列进行插入排序。</li>
@@ -577,8 +577,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2021/01/10/uncatalog/ckjraqjsy002wt0lp69uotg9x/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
+              <a href="/2021/01/10/programming-practise/flx1/" rel="prev" title="排序—归并排序">
+                排序—归并排序 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -760,7 +760,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#希尔排序思想"><span class="nav-number">1.</span> <span class="nav-text">希尔排序思想</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码实现"><span class="nav-number">2.</span> <span class="nav-text">代码实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法分析"><span class="nav-number">3.</span> <span class="nav-text">算法分析</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#思想"><span class="nav-number">1.</span> <span class="nav-text">思想</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码实现"><span class="nav-number">2.</span> <span class="nav-text">代码实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法分析"><span class="nav-number">3.</span> <span class="nav-text">算法分析</span></a></li></ol></div>
             
 
           </div>
